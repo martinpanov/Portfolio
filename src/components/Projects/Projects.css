@@ -1,0 +1,85 @@
+#how-does-it-work {
+    padding: 4rem 3%;
+}
+
+#how-does-it-work .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+#how-does-it-work .how-does-it-work-titles {
+    text-align: center;
+    width: 100%;
+}
+
+#how-does-it-work span.subtitle {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 0.25rem;
+}
+
+#how-does-it-work .section-title {
+    line-height: 1.25;
+}
+
+#how-does-it-work .how-does-it-work-container img {
+    margin-bottom: 4rem;
+}
+
+#how-does-it-work .how-does-it-work-title {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+}
+
+#how-does-it-work .how-does-it-work-paragraph {
+    font-size: 1.25rem;
+    color: var(--grey);
+    opacity: 0.6;
+}
+
+@media (min-width: 480px) {
+    #how-does-it-work .how-does-it-work-titles {
+        margin: 0 auto;
+        max-width: 536px;
+    }
+}
+
+@media (min-width: 768px) {
+    #how-does-it-work {
+        padding: 4rem 1.75rem;
+    }
+
+    #how-does-it-work .how-does-it-work-container {
+        display: flex;
+        gap: 60px;
+    }
+
+    #how-does-it-work .how-does-it-work-container img {
+        width: 50%;
+        margin-bottom: 0rem;
+    }
+
+    #how-does-it-work .how-does-it-work-container-info {
+        width: 50%;
+    }
+
+    #how-does-it-work .how-does-it-work-container:nth-child(odd) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 990px) {
+    #how-does-it-work .wrapper {
+        margin: 0 auto;
+    }
+
+    #how-does-it-work .how-does-it-work-container-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
