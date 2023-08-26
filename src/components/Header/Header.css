@@ -1,0 +1,58 @@
+header {
+    border-bottom: 1px solid var(--borders);
+}
+
+header .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 3%;
+}
+
+header .header-btns {
+    display: none;
+}
+
+header .btn.burger-button {
+    background-color: var(--big-stone);
+    color: var(--white);
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    header .btn.burger-button {
+        display: none;
+    }
+
+    header .header-btns {
+        display: flex;
+        gap: 10px;
+        font-size: 0.85rem;
+    }
+
+    header .header-btns .btn {
+        padding: 1rem 1.25rem;
+    }
+
+    header .light-color-btn {
+        background-color: var(--big-stone);
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 990px) {
+    header .wrapper {
+        margin: 0 auto;
+        max-width: 1340px;
+    }
+
+    header .btn:first-child {
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    header .btn:first-child:hover {
+        background-color: var(--big-stone);
+    }
+}
