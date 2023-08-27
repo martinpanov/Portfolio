@@ -21,7 +21,7 @@
 #hero .hero-btn {
     padding: 1rem 1.5rem;
     background-color: var(--buttons-blue);
-    color: var(--white);
+    color: var(--primary-text-color);
     border-radius: 10px;
     font-size: 1rem;
 }

@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--big-stone);
+    background-color: var(--bg-footer);
 }
 
 footer .wrapper {
@@ -25,7 +25,7 @@ footer .social-media {
 
 footer a {
     text-decoration: none;
-    color: var(--grey);
+    color: var(--primary-text-color);
 }
 
 footer i {
@@ -53,6 +53,6 @@ footer .wrapper>a {
     }
 
     footer .policies a:hover {
-        color: var(--white);
+        color: var(--primary-text-color);
     }
 }

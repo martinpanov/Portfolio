@@ -26,12 +26,12 @@
 
 #features .feature-title {
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--headings-color);
     margin-bottom: 1rem;
 }
 
 #features .feature-paragraph {
-    color: var(--grey);
+    color: var(--skills-paragraphs-color);
 }
 
 @media (min-width: 480px) {
@@ -57,6 +57,7 @@
     }
 
     #features .feature-link:hover {
-        background-color: var(--plan-background);
+        background-color: var(--skills-background-hover);
+        box-shadow: 37px 37px 96px 0 rgba(7, 14, 39, 0.08);
     }
 }
