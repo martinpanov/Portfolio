@@ -2,7 +2,7 @@
     padding: 3rem 3%;
 }
 
-#features .section-subtitle {
+#features .section--subtitle {
     margin-bottom: 3.5rem;
 }
 
@@ -22,6 +22,31 @@
     font-size: 2.5rem;
     color: var(--icon-color);
     margin-bottom: 2rem;
+}
+
+#features .fa-react {
+    color: #61DBFB;
+}
+
+#features .fa-square-js {
+    color: #f7df1e;
+}
+
+#features .fa-html5 {
+    color: #f06529;
+}
+
+#features .fa-css3-alt {
+    color: #2965f1;
+}
+
+#features .fa-node-js {
+    color: #3C873A;
+}
+
+#features .skill-mongo-leaf {
+    width: 35px;
+    height: 40px;
 }
 
 #features .feature-title {

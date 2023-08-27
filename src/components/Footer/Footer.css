@@ -25,7 +25,7 @@ footer .social-media {
 
 footer a {
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--footer-text-color);
 }
 
 footer i {

@@ -3,28 +3,24 @@ import './Hero.css';
 export default function Hero() {
     return (
         <section id="hero">
-            <div className="wrapper">
-                <div className="hero-info">
-                    <h1 className="section-title title">Landing Template for Startups</h1>
-                    <div className="hero-info-and-button">
-                        <h2 className="section-subtitle subtitle">Our landing page template is free to clone and perfect for
-                            all
-                            sorts of
-                            technology businesses.
-                            Built
-                            by
-                            the flowbase crew.</h2>
-                        <button className="btn hero-btn">Pricing and Plans</button>
-                    </div>
+            <div className="hero__main">
+                <div className="hero__info">
+                    <h1 className="hero__title section--title">Web Developer</h1>
+                    <h2 className='hero__subtitle section--subtitle'>Hi, my name is Martin Panov - A Dedicated And Passionate Web Developer.</h2>
+                    <a className='hero__github-logo' href="https://github.com/martinpanov/"><i className="fa-brands fa-github" /></a>
                 </div>
-                <img className="hero-img" src="./images/hero-image.png" alt="hero-image" />
-                <div className="hero-images">
-                    <img src="./images/google.svg" alt="google" />
-                    <img src="./images/slack.svg" alt="slack" />
-                    <img src="./images/amazon.svg" alt="amazon" />
-                    <img src="./images/zoom.svg" alt="zooom" />
-                    <img src="./images/netflix.svg" alt="netflix" />
+                <div className='hero__person-img-wrapper'>
+                    <img className="'hero__person-img" src="./me.png" alt="hero-image" />
                 </div>
+            </div>
+            <div className="hero__tech-stack">
+                <img src="./html5.svg" alt="HTML5" />
+                <img src="./css.svg" alt="CSS" />
+                <img src="./javascript.svg" alt="JavaScript" />
+                <img src="./react.svg" alt="React" />
+                <img src="./tailwind.svg" alt="Tailwind" />
+                <img src="./nodejs.svg" alt="NodeJS" />
+                <img src="./mongodb.svg" alt="MongoDB" />
             </div>
         </section>
     );

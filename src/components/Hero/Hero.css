@@ -1,21 +1,26 @@
-#hero .wrapper {
+#hero {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding: 4rem 3% 0rem 3%;
+    padding: 4rem 3% 0rem;
 }
 
-#hero .hero-info {
+.hero__main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: center;
     text-align: center;
 }
 
-#hero .section-title {
+.hero__title {
+    font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
-#hero .section-subtitle {
-    margin-bottom: 2.5rem;
+.hero__subtitle {
+    margin-bottom: 2rem;
 }
 
 #hero .hero-btn {
@@ -24,62 +29,84 @@
     color: var(--primary-text-color);
     border-radius: 10px;
     font-size: 1rem;
+    transition: all 0.4s;
 }
 
-#hero .hero-img {
+.hero__person-img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 24rem;
+    height: 24rem;
+}
+
+.hero__person-img {
     width: 100%;
+    height: 100%;
 }
 
-#hero .hero-images {
+.hero__tech-stack {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    grid-row-gap: 60px;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
-    text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid var(--borders);
+    transition: all 0.4s;
 }
 
 @media (min-width: 480px) {
-    #hero .hero-images {
+    .hero__tech-stack {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 768px) {
-    #hero .hero-images {
-        grid-template-columns: repeat(5, 1fr);
+    .hero__title {
+        font-size: 3.5rem;
+    }
+    .hero__tech-stack {
+        grid-template-columns: repeat(7, 1fr);
     }
 }
 
 @media (min-width: 990px) {
-    #hero .hero-info,
-    #hero .hero-images {
+    .hero__main,
+    .hero__tech-stack {
         max-width: 1100px;
     }
 
-    #hero .wrapper {
+    #hero {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #hero .hero-info {
+    .hero__main {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
         text-align: left;
     }
 
-    #hero .section-title {
-        max-width: 40%;
+    .hero__info {
+        width: 50%;
     }
 
-    #hero .hero-info-and-button {
-        max-width: 40%;
+    .hero__github-logo {
+        text-decoration: none;
+        font-size: 2.75rem;
+        color: var(--github-color);
+        transition: all 0.4s;
     }
 
-    #hero .hero-img {
+   .hero__github-logo:hover {
+        color: var(--buttons-blue);
+    }
+
+    .hero__person-img {
         max-width: 1300px;
     }
 }

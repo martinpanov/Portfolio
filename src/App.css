@@ -10,7 +10,9 @@
   --projects-paragraphs-color: #7e8bb6;
   --skills-paragraphs-color: #ccd2e9;
   --skills-background-hover: #081131;
+  --footer-text-color: #ccd2e9;
   --primary-text-color: #ffffff;
+  --github-color: #ffffff;
   --borders: hsla(0, 0%, 100%, 0.1);
   --icon-color: #7e8bb6;
 }
@@ -24,6 +26,7 @@
   --projects-paragraphs-color: #7e8bb6;
   --skills-paragraphs-color: rgba(7, 14, 39, 0.6);
   --skills-background-hover: #fff;
+  --github-color: #162044;
   --borders: #e2e7fa;
 }
 
@@ -38,21 +41,17 @@ body {
   color: var(--primary-text-color);
 }
 
-.section-title {
+.section--title {
   font-size: 3.5rem;
-}
-
-.title {
   color: var(--headings-color);
+  transition: all 0.4s;
 }
 
-.section-subtitle {
+.section--subtitle {
   font-size: 1.25rem;
-}
-
-.subtitle {
   color: var(--subheadings-color);
   font-weight: normal;
+  transition: all 0.4s;
 }
 
 span.subtitle,
