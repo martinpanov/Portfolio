@@ -1,20 +1,21 @@
-header {
+#header {
     border-bottom: 1px solid var(--borders);
     transition: all 0.4s;
 }
 
-header .wrapper {
+.header__wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.25rem 3%;
 }
 
-header .header-btns {
+.header__list-items {
     display: none;
 }
 
-header .btn.burger-button {
+.header__burger-button {
     background-color: var(--buttons-primary);
     color: var(--primary-text-color);
     padding: 1.25rem 1.5rem;
@@ -23,44 +24,52 @@ header .btn.burger-button {
 }
 
 @media (min-width: 768px) {
-    header .btn.burger-button {
+    .header__burger-button {
         display: none;
     }
-
-    header .header-btns {
+    
+    .header__list-items {
         display: flex;
-        gap: 10px;
-        font-size: 0.85rem;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.075rem;
+    }
+    
+    .header__list-items a {
+        color: var(--theme-button-text-color);
+        text-decoration: none;
     }
 
-    header .header-btns .btn {
+    .header__theme-button {
         padding: 1rem 1.25rem;
     }
 
-    header .btn:first-child {
+    .header__theme-button {
         color: var(--theme-button-text-color);
-        transition: all 0.4s;
-    }
-
-    header .light-color-btn {
-        background-color: var(--buttons-primary);
-        border-radius: 10px;
         transition: all 0.4s;
     }
 }
 
 @media (min-width: 990px) {
-    header .wrapper {
+    .header__wrapper {
         margin: 0 auto;
         max-width: 1340px;
     }
 
-    header .btn:first-child {
+    .header__theme-button {
         border-radius: 10px;
-        transition: all 0.3s ease;
+        transition: all 0.4s;
     }
 
-    header .btn:first-child:hover {
+    .header__list-item a {
+        transition: all 0.4s;
+    }
+
+    .header__list-item:hover a {
+        color: var(--buttons-blue);
+    }
+
+    .header__theme-button:hover {
         background-color: var(--buttons-primary);
         color: var(--primary-text-color);
     }

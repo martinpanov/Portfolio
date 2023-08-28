@@ -2,19 +2,15 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <footer>
-            <div className="wrapper">
-                <ul className="social-media" role="list">
-                    <li><a href=""><i className="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href=""><i className="fa-brands fa-twitter"></i></a></li>
-                    <li><a href=""><i className="fa-brands fa-instagram"></i></a></li>
-                    <li><a href=""><i className="fa-brands fa-linkedin-in"></i></a></li>
+        <footer id="footer">
+            <div className="footer__wrapper">
+                <ul className="footer__social-media" role="list">
+                    <li><a className="footer__social-media-links" href=""><i className="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a className="footer__social-media-links" href=""><i className="fa-brands fa-twitter"></i></a></li>
+                    <li><a className="footer__social-media-links" href=""><i className="fa-brands fa-instagram"></i></a></li>
+                    <li><a className="footer__social-media-links" href=""><i className="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
-                <ul className="policies" role="list">
-                    <li><a href="">Terms & Conditions</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
-                <a href="">2020 All right reserved</a>
+                <span className="footer__rights">2023 All right reserved</span>
             </div>
         </footer>
     );
