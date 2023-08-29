@@ -31,6 +31,14 @@ export default function Projects() {
                             <h4 className="projects__technology-name">MongoDB</h4>
                         </div>
                     </div>
+                    <div className="projects__links">
+                        <a className="projects__link" href="https://begachka.donttouchmydomain.com" target="_blank">
+                            Live Demo <i className="fa-solid fa-arrow-up-right-from-square" />
+                        </a>
+                        <a className="projects__link" href="https://github.com/martinpanov/Cars" target="_blank">
+                            Code <i className="fa-brands fa-github" />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div ref={secondProjectRef} className={`projects__project-container ${secondProjectIsVisible ? 'active' : ''}`}>
@@ -53,6 +61,14 @@ export default function Projects() {
                         <div className="projects__technology">
                             <h4 className="projects__technology-name">MongoDB</h4>
                         </div>
+                    </div>
+                    <div className="projects__links">
+                        <a className="projects__link" href="https://barbershop-bar8.vercel.app" target="_blank">
+                            Live Demo <i className="fa-solid fa-arrow-up-right-from-square" />
+                        </a>
+                        <a className="projects__link" href="https://github.com/martinpanov/barbershop" target="_blank">
+                            Code <i className="fa-brands fa-github" />
+                        </a>
                     </div>
                 </div>
             </div>
