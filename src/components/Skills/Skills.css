@@ -6,9 +6,24 @@
     margin-bottom: 3.5rem;
 }
 
+.skills__titles {
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.skills__titles.active {
+    opacity: 1;
+}
+
 .skills__list-items {
     display: grid;
     gap: 28px;
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.skills__list-items.active {
+    opacity: 1;
 }
 
 .skills__list-item {

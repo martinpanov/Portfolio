@@ -20,8 +20,33 @@
 }
 
 .projects__description {
-    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
     color: var(--projects-paragraphs-color);
+    font-size: 1.25rem;
+}
+
+.projects__project-container {
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.projects__project-container.active {
+    opacity: 1;
+}
+
+.projects__technologies-used {
+    display: flex;
+    gap: 1rem;
+}
+
+.projects__technology {
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--projects-paragraphs-color);
+}
+
+.projects__technology-name {
+    color: var(--headings-color);
 }
 
 @media (min-width: 480px) {

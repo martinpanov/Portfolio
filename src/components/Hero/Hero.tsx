@@ -1,8 +1,11 @@
+import { useInView } from 'react-intersection-observer';
 import './Hero.css';
 
 export default function Hero() {
+    const { ref, inView } = useInView({ triggerOnce: true });
+
     return (
-        <section id="hero">
+        <section id="hero" ref={ref} className={`${inView ? 'active' : ''}`}>
             <div className="hero__main">
                 <div className="hero__info">
                     <h1 className="hero__title section--title">Web Developer</h1>

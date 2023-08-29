@@ -7,15 +7,14 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import { ThemeContext } from './context/ThemeContext';
 
-type Theme = 'dark' | 'light';
+type Theme = 'light' | 'dark';
 
 function App() {
-    const [theme, setTheme] = useState<Theme>('dark');
+    const [theme, setTheme] = useState<Theme>('light');
 
     useEffect(() => {
-        console.log(theme);
-        if (theme === 'light') {
-            return document.body.setAttribute('data-theme', 'light');
+        if (theme === 'dark') {
+            return document.body.setAttribute('data-theme', 'dark');
         }
 
         document.body.removeAttribute('data-theme');

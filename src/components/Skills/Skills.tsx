@@ -1,13 +1,19 @@
+import { useInView } from 'react-intersection-observer';
 import './Skills.css';
 
 export default function Skills() {
+    const { ref: titleRefs, inView: areTitlesVisible } = useInView({ threshold: 0.4, triggerOnce: true });
+    const { ref: skillsRef, inView: areSkillsVisible } = useInView({ threshold: 0.4, triggerOnce: true });
+
     return (
         <section id="skills">
-            <h2 className="skills__title section--title">Skills</h2>
-            <h3 className="skills__subtitle section--subtitle">Our landing page template works on all devices, so you only have
-                to set.
-            </h3>
-            <ul className="skills__list-items" role='list'>
+            <div ref={titleRefs} className={`skills__titles ${areTitlesVisible ? 'active' : ''}`}>
+                <h2 className="skills__title section--title">Skills</h2>
+                <h3 className="skills__subtitle section--subtitle">Our landing page template works on all devices, so you only have
+                    to set.
+                </h3>
+            </div>
+            <ul ref={skillsRef} className={`skills__list-items ${areSkillsVisible ? 'active' : ''}`} role='list'>
                 <li className="skills__list-item">
                     <i className="fa-brands fa-react skill--icon"></i>
                     <h4 className="skills__skill-title section--subtitle">React</h4>

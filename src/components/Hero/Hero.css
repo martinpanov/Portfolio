@@ -3,6 +3,12 @@
     flex-direction: column;
     gap: 80px;
     padding: 4rem 3% 0rem;
+    transition: all 1.2s;
+    opacity: 0;
+}
+
+#hero.active {
+    opacity: 1;
 }
 
 .hero__main {
