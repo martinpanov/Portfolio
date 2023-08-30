@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header id="header">
             <div className="header__wrapper">
-                <img className="header__logo" src="./Safia-logo.svg" alt="logo" />
+                <img className="header__logo" src="./logo.png" alt="logo" />
                 <nav className="header__navigation">
                     <ul className="header__list-items" role="list">
                         <li className="header__list-item"><a href="#hero">Home</a></li>

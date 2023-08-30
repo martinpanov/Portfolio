@@ -11,6 +11,11 @@
     padding: 1.25rem 3%;
 }
 
+.header__logo {
+    width: 4rem;
+    height: 4.5rem;
+}
+
 .header__list-items {
     display: none;
 }

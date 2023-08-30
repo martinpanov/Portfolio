@@ -41,18 +41,15 @@ export default function Skills() {
                 <li className="skills__list-item">
                     <i className="fa-brands fa-node-js skill--icon"></i>
                     <h4 className="skills__skill-title section--subtitle">NodeJS</h4>
-                    <p className="skills__skill-description">A pseudo-Latin text used in web design, layout, and printing in
-                        place
-                        of things to emphasise
-                        layouts for previewing layouts and visual mockups.</p>
+                    <p className="skills__skill-description">Aspiring Node.js enthusiast, embracing server-side development. Actively learning to build dynamic web applications,
+                        with a focus on crafting responsive and efficient user experiences.
+                    </p>
                 </li>
                 <li className="skills__list-item">
                     <img className="skill-mongo-leaf skill--icon" src="./mongo-leaf.svg" alt="MongoDB" />
                     <h4 className="skills__skill-title section--subtitle">MongoDB</h4>
-                    <p className="skills__skill-description">A pseudo-Latin text used in web design, layout, and printing in
-                        place
-                        of things to emphasise
-                        layouts for previewing layouts and visual mockups.</p>
+                    <p className="skills__skill-description">Developing familiarity with MongoDB, focusing on effective data storage and retrieval.
+                        Aiming to contribute database expertise to support applications' backend infrastructure.</p>
                 </li>
             </ul>
         </section>
