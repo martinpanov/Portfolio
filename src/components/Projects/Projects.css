@@ -8,6 +8,12 @@
 .projects__titles {
     text-align: center;
     width: 100%;
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.projects__titles.active {
+    opacity: 1;
 }
 
 .projects__image-wrapper {

@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import { ThemeContext } from './context/ThemeContext';
+import About from './components/About/About';
 
 type Theme = 'light' | 'dark';
 
@@ -27,6 +28,7 @@ function App() {
                 <Hero />
                 <Projects />
                 <Skills />
+                <About />
             </main>
             <Footer />
         </ThemeContext.Provider>

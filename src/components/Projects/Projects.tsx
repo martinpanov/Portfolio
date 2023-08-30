@@ -2,16 +2,17 @@ import { useInView } from 'react-intersection-observer';
 import './Projects.css';
 
 export default function Projects() {
-    const { ref: firstProjectRef, inView: firstProjectIsVisible } = useInView({ threshold: 0.4, triggerOnce: true });
-    const { ref: secondProjectRef, inView: secondProjectIsVisible } = useInView({ threshold: 0.4, triggerOnce: true });
+    const { ref: firstProjectRef, inView: isFirstProjectVisible } = useInView({ threshold: 0.4, triggerOnce: true });
+    const { ref: secondProjectRef, inView: isSecondProjectVisible } = useInView({ threshold: 0.4, triggerOnce: true });
+    const { ref: titlesRef, inView: areTitlesVisible } = useInView({ threshold: 0.4, triggerOnce: true });
 
     return (
         <section id="projects">
-            <div className="projects__titles">
+            <div ref={titlesRef} className={`projects__titles ${areTitlesVisible ? 'active' : ''}`}>
                 <h2 className="projects__title section--title">Projects</h2>
                 <h3 className="projects__subtitle section--subtitle">Showcasing Some Of My Web Development Projects.</h3>
             </div>
-            <div ref={firstProjectRef} className={`projects__project-container ${firstProjectIsVisible ? 'active' : ''}`}>
+            <div ref={firstProjectRef} className={`projects__project-container ${isFirstProjectVisible ? 'active' : ''}`}>
                 <div className="projects__image-wrapper first-wrapper">
                     <img className="projects__image" src="./begachka.png" alt="begachka" />
                 </div>
@@ -41,7 +42,7 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-            <div ref={secondProjectRef} className={`projects__project-container ${secondProjectIsVisible ? 'active' : ''}`}>
+            <div ref={secondProjectRef} className={`projects__project-container ${isSecondProjectVisible ? 'active' : ''}`}>
                 <div className="projects__image-wrapper second-wrapper">
                     <img className="projects__image" src="./barbershop.png" alt="barbershop" />
                 </div>
