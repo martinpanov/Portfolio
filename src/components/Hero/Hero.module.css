@@ -29,15 +29,6 @@
     margin-bottom: 2rem;
 }
 
-#hero .hero-btn {
-    padding: 1rem 1.5rem;
-    background-color: var(--buttons-blue);
-    color: var(--primary-text-color);
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.4s;
-}
-
 .hero__person-img-wrapper {
     border-radius: 50%;
     overflow: hidden;

@@ -1,18 +1,17 @@
 import { useInView } from 'react-intersection-observer';
-import './About.css';
+import styles from './About.module.css';
 
 export default function About() {
     const { ref: titleRef, inView: isTitleVisible } = useInView({ threshold: 0.4, triggerOnce: true });
     const { ref: infoRef, inView: isInfoVisible } = useInView({ threshold: 0.4, triggerOnce: true });
 
-
     return (
-        <section id="about">
-            <h2 ref={titleRef} className={`about__title section--title ${isTitleVisible ? 'active' : ''}`}>About Me</h2>
-            <div ref={infoRef} className={`about__info ${isInfoVisible ? 'active' : ''}`}>
-                <img src="./about-me.png" alt="about-me" className="about__me-image" />
-                <p className="about__description">
-                    Hi, my name is Martin Panov. <img className="about__wave-image" src="./wave.png" alt="wave" /> Rougly 2 years ago, I started my journey of learning web development and more specifically specializing in JavaScript.
+        <section id={styles["about"]}>
+            <h2 ref={titleRef} className={`${styles["about__title"]} section--title ${isTitleVisible ? styles["active"] : ''}`}>About Me</h2>
+            <div ref={infoRef} className={`${styles["about__info"]} ${isInfoVisible ? styles["active"] : ''}`}>
+                <img className={styles["about__me-image"]} src="./about-me.png" alt="about-me" />
+                <p className={styles["about__description"]}>
+                    Hi, my name is Martin Panov. <img className={styles["about__wave-image"]} src="./wave.png" alt="wave" /> Rougly 2 years ago, I started my journey of learning web development and more specifically specializing in JavaScript.
                     I got into the IT industry back in 2019 as a Customer Service Representative in a hosting company called SiteGround.
                     Ever since I was young, I've been drawn into computers and technology in general. Just like any youngster, curiosity drove me to experiment with all sorts of things to discover how they worked.
                     For me it was all about computers, I liked swapping parts out from my computer with new ones and I also liked messing around with different software and games.
