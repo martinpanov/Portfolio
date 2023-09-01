@@ -46,6 +46,10 @@
     color: var(--skills-paragraphs-color);
 }
 
+.about__description:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 990px) {
     .about__info {
         flex-direction: row;
