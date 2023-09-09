@@ -1,5 +1,6 @@
 import { useInView } from 'react-intersection-observer';
 import styles from './Skills.module.css';
+import useThreshold from '../../hooks/useThreshold';
 
 const SKILLS = [
     {
@@ -30,8 +31,9 @@ const SKILLS = [
 ];
 
 export default function Skills() {
+    const threshold = useThreshold(0.4, 0.1);
     const { ref: titleRefs, inView: areTitlesVisible } = useInView({ threshold: 0.4, triggerOnce: true });
-    const { ref: skillsRef, inView: areSkillsVisible } = useInView({ threshold: 0.4, triggerOnce: true });
+    const { ref: skillsRef, inView: areSkillsVisible } = useInView({ threshold: threshold, triggerOnce: true });
 
     return (
         <section id={styles["skills"]}>

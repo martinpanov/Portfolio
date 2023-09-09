@@ -20,6 +20,15 @@
     margin-bottom: 4rem;
 }
 
+.projects__image-wrapper.weather-app-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.weather-app-wrapper .projects__image {
+    border-radius: 10px;
+}
+
 .projects__info {
     display: flex;
     flex-direction: column;
@@ -118,11 +127,11 @@
         transition: transform 7s ease-in-out 0s;
     }
 
-    .first-wrapper:hover .projects__image {
+    .begachka-wrapper:hover .projects__image {
         transform: translateY(-53.5%);
     }
     
-    .second-wrapper:hover .projects__image {
+    .barbershop-wrapper:hover .projects__image {
         transform: translateY(-66.5%);
     }
 

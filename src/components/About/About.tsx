@@ -1,9 +1,11 @@
 import { useInView } from 'react-intersection-observer';
 import styles from './About.module.css';
+import useThreshold from '../../hooks/useThreshold';
 
 export default function About() {
+    const threshold = useThreshold(0.4, 0.1);
     const { ref: titleRef, inView: isTitleVisible } = useInView({ threshold: 0.4, triggerOnce: true });
-    const { ref: infoRef, inView: isInfoVisible } = useInView({ threshold: 0.4, triggerOnce: true });
+    const { ref: infoRef, inView: isInfoVisible } = useInView({ threshold: threshold, triggerOnce: true });
 
     return (
         <section id={styles["about"]}>
