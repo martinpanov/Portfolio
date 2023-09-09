@@ -9,8 +9,8 @@ export default function About() {
 
     return (
         <section id={styles["about"]}>
-            <h2 ref={titleRef} className={`${styles["about__title"]} section--title ${isTitleVisible ? styles["active"] : ''}`}>About Me</h2>
-            <div ref={infoRef} className={`${styles["about__info"]} ${isInfoVisible ? styles["active"] : ''}`}>
+            <h2 ref={titleRef} className={`${styles["about__title"]} section--title ${isTitleVisible ? styles["about--active"] : ''}`}>About Me</h2>
+            <div ref={infoRef} className={`${styles["about__info"]} ${isInfoVisible ? styles["about--active"] : ''}`}>
                 <img className={styles["about__me-image"]} src="./about-me.png" alt="about-me" />
                 <div>
                     <p className={styles["about__description"]}>

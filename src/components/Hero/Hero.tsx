@@ -5,7 +5,7 @@ export default function Hero() {
     const { ref, inView } = useInView({ triggerOnce: true });
 
     return (
-        <section id={styles["hero"]} ref={ref} className={`${inView ? styles['active'] : ''}`}>
+        <section id={styles["hero"]} ref={ref} className={`${inView ? styles['hero--active'] : ''}`}>
             <div className={styles["hero__main"]}>
                 <div className={styles["hero__info"]}>
                     <h1 className={`${styles["hero__title"]} section--title`}>Web Developer</h1>

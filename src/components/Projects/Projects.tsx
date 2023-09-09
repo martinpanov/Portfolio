@@ -40,13 +40,13 @@ export default function Projects() {
     ];
     return (
         <section id={styles["projects"]}>
-            <div ref={titlesRef} className={`${styles["projects__titles"]} ${areTitlesVisible ? styles["active"] : ''}`}>
+            <div ref={titlesRef} className={`${styles["projects__titles"]} ${areTitlesVisible ? styles["projects--active"] : ''}`}>
                 <h2 className={`${styles["projects__title"]} section--title`}>Projects</h2>
                 <h3 className={`${styles["projects__subtitle"]} section--subtitle`}>Showcasing Some Of My Web Development Projects.</h3>
             </div>
             {projects.map((project) => {
                 return (
-                    <div key={project.title} ref={project.ref} className={`${styles["projects__project-container"]} ${project.inView ? styles["active"] : ''}`}>
+                    <div key={project.title} ref={project.ref} className={`${styles["projects__project-container"]} ${project.inView ? styles["projects--active"] : ''}`}>
                         <div className={`${styles["projects__image-wrapper"]} ${styles[`${project.image}-wrapper`]}`}>
                             <img className={styles["projects__image"]} src={`./${project.image}.png`} alt={project.image} />
                         </div>
@@ -68,7 +68,7 @@ export default function Projects() {
                                     Live Demo <i className={`fa-solid fa-arrow-up-right-from-square ${styles["fa-arrow-up-right-from-squre"]}`} />
                                 </a>
                                 <a className={styles["projects__link"]} href={project.codeLink} target="_blank">
-                                    Code <i className={`fa-brands fa-github ${styles["fa-github"]}`} />
+                                    Code <i className={`fa-brands fa-github ${styles["projects--fa-github"]}`} />
                                 </a>
                             </div>
                         </div>

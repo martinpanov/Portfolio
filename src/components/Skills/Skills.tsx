@@ -37,10 +37,10 @@ export default function Skills() {
 
     return (
         <section id={styles["skills"]}>
-            <div ref={titleRefs} className={`${styles["skills__titles"]} ${areTitlesVisible ? styles['active'] : ''}`}>
+            <div ref={titleRefs} className={`${styles["skills__titles"]} ${areTitlesVisible ? styles['skills--active'] : ''}`}>
                 <h2 className={`${styles["skills__title"]} section--title`}>Skills</h2>
             </div>
-            <ul ref={skillsRef} className={`${styles["skills__list-items"]} ${areSkillsVisible ? styles['active'] : ''}`} role='list'>
+            <ul ref={skillsRef} className={`${styles["skills__list-items"]} ${areSkillsVisible ? styles['skills--active'] : ''}`} role='list'>
                 {SKILLS.map((skill, index) => (
                     <li key={index} className={styles["skills__list-item"]}>
                         <i className={`fa-brands ${skill.icon} ${styles[skill.icon]} ${styles["skill--icon"]}`}></i>

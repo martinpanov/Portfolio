@@ -9,7 +9,7 @@
     transition: opacity 1.2s;
 }
 
-.about__title.active {
+.about__title.about--active {
     opacity: 1;
 }
 
@@ -22,7 +22,7 @@
     transition: opacity 1.2s;
 }
 
-.about__info.active{
+.about__info.about--active{
     opacity: 1;
 }
 

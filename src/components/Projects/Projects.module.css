@@ -12,7 +12,7 @@
     transition: opacity 1.2s;
 }
 
-.projects__titles.active {
+.projects__titles.projects--active {
     opacity: 1;
 }
 
@@ -50,7 +50,7 @@
     transition: opacity 1.2s;
 }
 
-.projects__project-container.active {
+.projects__project-container.projects--active {
     opacity: 1;
 }
 
@@ -86,7 +86,7 @@
     color: var(--buttons-blue);
 }
 
-.projects__link .fa-github{
+.projects__link .projects--fa-github{
     font-size: 2rem;
 }
 

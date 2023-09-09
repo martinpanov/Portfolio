@@ -11,7 +11,7 @@
     transition: opacity 1.2s;
 }
 
-.skills__titles.active {
+.skills__titles.skills--active {
     opacity: 1;
 }
 
@@ -22,7 +22,7 @@
     transition: opacity 1.2s;
 }
 
-.skills__list-items.active {
+.skills__list-items.skills--active {
     opacity: 1;
 }
 

@@ -7,7 +7,7 @@
     opacity: 0;
 }
 
-#hero.active {
+#hero.hero--active {
     opacity: 1;
 }
 
