@@ -6,7 +6,7 @@ This is my portfolio built with React. It showcases my skills, projects and info
 
 ### The link to the website is https://martinp48.sg-host.com/
 
-![Cars](https://user-images.githubusercontent.com/106311309/230741582-e7f9954e-e37f-45d2-adcf-debcf9d6e8a4.jpg)
+![martinp48 sg-host com_](https://github.com/martinpanov/Portfolio/assets/106311309/626552b2-8cef-4a7a-a905-eafa42aa018c)
 
 ## Technology Stack
 
