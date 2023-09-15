@@ -47,9 +47,9 @@ export default function Projects() {
             {projects.map((project) => {
                 return (
                     <div key={project.title} ref={project.ref} className={`${styles["projects__project-container"]} ${project.inView ? styles["projects--active"] : ''}`}>
-                        <div className={`${styles["projects__image-wrapper"]} ${styles[`${project.image}-wrapper`]}`}>
+                        <a className={`${styles["projects__image-wrapper"]} ${styles[`${project.image}-wrapper`]}`} href={project.link} target="_blank">
                             <img className={styles["projects__image"]} src={`./${project.image}.png`} alt={project.image} />
-                        </div>
+                        </a>
                         <div className={styles["projects__info"]}>
                             <h3 className={`${styles["projects__project-title"]} section--title`}>{project.title}</h3>
                             <p className={styles["projects__description"]}>{project.description}</p>
