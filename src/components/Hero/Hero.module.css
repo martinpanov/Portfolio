@@ -1,124 +1,118 @@
-#hero {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding: 4rem 3% 0rem;
-    transition: all 1.2s;
-    opacity: 0;
-}
-
-#hero.hero--active {
-    opacity: 1;
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 4rem 3% 0rem;
 }
 
 .hero__main {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
 }
 
 .hero__title {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .hero__subtitle {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero__person-img-wrapper {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 24rem;
-    height: 24rem;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 24rem;
+  height: 24rem;
 }
 
 .hero__person-img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .hero__github-logo {
-    text-decoration: none;
-    font-size: 2.75rem;
-    color: var(--github-color);
-    transition: all 0.4s;
+  text-decoration: none;
+  font-size: 2.75rem;
+  color: var(--github-color);
+  transition: all 0.4s;
 }
 
 .hero__tech-stack {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--borders);
-    transition: all 0.4s;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--borders);
+  transition: all 0.4s;
 }
 
 .hero__tech-stack > *:last-child {
-    grid-column: span 2;
-    width: 9rem;
-    height: 2.75rem;
+  grid-column: span 2;
+  width: 9rem;
+  height: 2.75rem;
 }
 
 @media (min-width: 480px) {
-    .hero__tech-stack {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .hero__tech-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .hero__tech-stack > *:last-child {
-        grid-column: span 3
-    }
+  .hero__tech-stack > *:last-child {
+    grid-column: span 3;
+  }
 }
 
 @media (min-width: 768px) {
-    .hero__title {
-        font-size: 3.5rem;
-    }
+  .hero__title {
+    font-size: 3.5rem;
+  }
 
-    .hero__tech-stack {
-        grid-template-columns: repeat(7, 1fr);
-    }
+  .hero__tech-stack {
+    grid-template-columns: repeat(7, 1fr);
+  }
 
-    .hero__tech-stack > *:last-child {
-        grid-column: span 1
-    }
+  .hero__tech-stack > *:last-child {
+    grid-column: span 1;
+  }
 }
 
 @media (min-width: 990px) {
-    .hero__main,
-    .hero__tech-stack {
-        max-width: 1100px;
-    }
+  .hero__main,
+  .hero__tech-stack {
+    max-width: 1100px;
+  }
 
-    #hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .hero__main {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        text-align: left;
-    }
+  .hero__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+  }
 
-    .hero__info {
-        width: 50%;
-    }
+  .hero__info {
+    width: 50%;
+  }
 
-   .hero__github-logo:hover {
-        color: var(--buttons-blue);
-    }
+  .hero__github-logo:hover {
+    color: var(--buttons-blue);
+  }
 
-    .hero__person-img {
-        max-width: 1300px;
-    }
+  .hero__person-img {
+    max-width: 1300px;
+  }
 }
