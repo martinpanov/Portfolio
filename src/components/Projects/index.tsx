@@ -12,7 +12,7 @@ const PROJECTS = [
     description:
       'A web application which allows you to list your car for sale and rent a car. The application features user authentication, with the frontend making use of a variety of HTTP methods, while the backend effectively covers all CRUD operations.',
     technologies: ['React', 'Express.js', 'MongoDB'],
-    link: 'https://begachka.donttouchmydomain.com',
+    link: 'https://cars.yoannabest.com',
     codeLink: 'https://github.com/martinpanov/Cars',
   },
   {
@@ -21,7 +21,7 @@ const PROJECTS = [
     description:
       "A website which showcases services, barbers' profiles, gallery, and booking functionality. The website uses server side rendering for initial load speed and SEO, along with client-side rendering for interactive user experiences, enhancing overall performance.",
     technologies: ['Next.js', 'Tailwind CSS', 'MongoDB'],
-    link: 'https://barbershop-bar8.vercel.app',
+    link: 'https://barbershop.yoannabest.com',
     codeLink: 'https://github.com/martinpanov/barbershop',
   },
   {
@@ -30,7 +30,7 @@ const PROJECTS = [
     description:
       "A web application built with React, it provides a dynamic and responsive user interface, ensuring an interactive experience. Redux handles state management efficiently, while the OpenWeather API supplies real-time data. Users can access current weather conditions, daily forecasts, and today's weather details",
     technologies: ['React', 'Redux'],
-    link: 'https://donttouchmydomain.com',
+    link: 'https://weather.yoannabest.com',
     codeLink: 'https://github.com/martinpanov/Weather-App',
   },
 ];
