@@ -1,153 +1,138 @@
-#projects {
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
-    padding: 4rem 3%;
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 4rem 3%;
 }
 
 .projects__titles {
-    text-align: center;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1.2s;
-}
-
-.projects__titles.projects--active {
-    opacity: 1;
+  text-align: center;
+  width: 100%;
 }
 
 .projects__image-wrapper {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
-.projects__image-wrapper.weather-app-wrapper {
-    display: flex;
-    align-items: center;
+.weather-app-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.weather-app-wrapper .projects__image {
-    border-radius: 10px;
+.weather-app-wrapper__image {
+  border-radius: 10px;
 }
 
 .projects__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.75rem;
 }
 
 .projects__project-title {
-    font-size: 2.25rem;
+  font-size: 2.25rem;
 }
 
 .projects__description {
-    color: var(--projects-paragraphs-color);
-    font-size: 1.25rem;
+  color: var(--projects-paragraphs-color);
+  font-size: 1.25rem;
 }
 
-.projects__project-container {
-    opacity: 0;
-    transition: opacity 1.2s;
-}
-
-.projects__project-container.projects--active {
-    opacity: 1;
-}
-
-.projects__technologies-used {
-    display: flex;
-    gap: 1rem;
+.projects__technologies {
+  display: flex;
+  gap: 1rem;
 }
 
 .projects__technology {
-    padding: 0.25rem 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--projects-paragraphs-color);
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--projects-paragraphs-color);
 }
 
 .projects__technology-name {
-    color: var(--headings-color);
+  color: var(--headings-color);
 }
 
 .projects__links {
-    display: flex;
-    align-items: flex-end;
-    gap: 2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
 }
 
 .projects__link {
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: var(--github-color);
-    transition: color 0.4s;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--github-color);
+  transition: color 0.4s;
 }
 
 .projects__link:hover {
-    color: var(--buttons-blue);
+  color: var(--buttons-blue);
 }
 
-.projects__link .projects--fa-github{
-    font-size: 2rem;
+.projects__link-icon__github {
+  font-size: 2rem;
 }
 
-.projects__link .fa-arrow-up-right-from-square {
-    font-size: 1.5rem;
+.projects__link-icon__external {
+  font-size: 1.5rem;
 }
 
 @media (min-width: 480px) {
-    .projects__titles {
-        margin: 0 auto;
-        max-width: 536px;
-    }
+  .projects__titles {
+    margin: 0 auto;
+    max-width: 536px;
+  }
 }
 
 @media (min-width: 768px) {
-    #projects {
-        padding: 4rem 1.75rem;
-    }
+  .projects {
+    padding: 4rem 1.75rem;
+  }
 
-    .projects__project-container {
-        display: flex;
-        gap: 60px;
-    }
+  .projects__container {
+    display: flex;
+    gap: 60px;
+  }
 
-    .projects__image-wrapper {
-        width: 50%;
-        height: 24rem;
-        margin-bottom: 0rem;
-        border-radius: 10px;
-        overflow: hidden;
-    }
+  .projects__image-wrapper {
+    width: 50%;
+    height: 24rem;
+    margin-bottom: 0rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-    .projects__image {
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-        transform: translateY(0%);
-        transition: transform 7s ease-in-out 0s;
-    }
+  .projects__image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    transform: translateY(0%);
+    transition: transform 7s ease-in-out 0s;
+  }
 
-    .begachka-wrapper:hover .projects__image {
-        transform: translateY(-53.5%);
-    }
-    
-    .barbershop-wrapper:hover .projects__image {
-        transform: translateY(-66.5%);
-    }
+  .begachka-wrapper:hover .begachka-wrapper__image {
+    transform: translateY(-53.5%);
+  }
 
-    .projects__info {
-        width: 50%;
-    }
+  .barbershop-wrapper:hover .barbershop-wrapper__image {
+    transform: translateY(-66.5%);
+  }
 
-    .projects__project-container:nth-child(odd) {
-        display: flex;
-        flex-direction: row-reverse;
-    }
+  .projects__info {
+    width: 50%;
+  }
+
+  .projects__container:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 @media (min-width: 990px) {
-    #projects {
-        margin: 0 auto;
-        max-width: 1100px;
-    }
+  .projects {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
 }

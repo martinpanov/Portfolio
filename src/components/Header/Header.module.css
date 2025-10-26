@@ -1,121 +1,113 @@
 #header {
-    border-bottom: 1px solid var(--borders);
-    transition: all 0.4s;
+  border-bottom: 1px solid var(--borders);
+  transition: all 0.4s;
 }
 
 .header__wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 3%;
 }
 
 .header__logo {
-    width: 4rem;
-    height: 4.5rem;
-}
-
-.header__list-items {
-    display: none;
+  width: 4rem;
+  height: 4.5rem;
 }
 
 .header__burger-button {
-    background-color: var(--buttons-primary);
-    color: var(--primary-text-color);
-    padding: 1.25rem 1.5rem;
-    border-radius: 10px;
-    transition: all 0.4s;
+  background-color: var(--buttons-primary);
+  color: var(--primary-text-color);
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  transition: all 0.4s;
 }
 
 .header__list-items-wrapper {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .header__close-button-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 7rem;
 }
 
 .header__close-button {
-    padding-right: 2rem;
-    font-size: 2.25rem;
+  padding-right: 2rem;
+  font-size: 2.25rem;
 }
 
-.header__list-items {
-    display: none;
+.header__list-items-wrapper .header__list-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80%;
+  gap: 1rem;
+  font-size: 2rem;
+  color: var(--theme-button-text-color);
 }
 
-.header__list-items-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 80%;
-    gap: 1rem;
-    font-size: 2rem;
-    color: var(--theme-button-text-color);
+.header__navigation > .header__list-items {
+  display: none;
 }
 
-.header__list-items-mobile a {
-    color: var(--theme-button-text-color);
-    text-decoration: none;
+.header__list-items a {
+  color: var(--theme-button-text-color);
+  text-decoration: none;
 }
-
 
 @media (min-width: 768px) {
-    .header__burger-button {
-        display: none;
-    }
-    
-    .header__list-items {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        font-size: 1.075rem;
-    }
-    
-    .header__list-items a {
-        color: var(--theme-button-text-color);
-        text-decoration: none;
-    }
+  .header__burger-button {
+    display: none;
+  }
 
-    .header__theme-button {
-        padding: 1rem 1.25rem;
-    }
+  .header__list-items-wrapper {
+    display: none;
+  }
 
-    .header__theme-button {
-        color: var(--theme-button-text-color);
-        transition: all 0.4s;
-    }
+  .header__navigation > .header__list-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.075rem;
+  }
+
+  .header__theme-button {
+    padding: 1rem 1.25rem;
+    color: var(--theme-button-text-color);
+    transition: all 0.4s;
+  }
 }
 
 @media (min-width: 990px) {
-    .header__wrapper {
-        margin: 0 auto;
-        max-width: 1340px;
-    }
+  .header__wrapper {
+    margin: 0 auto;
+    max-width: 1340px;
+  }
 
-    .header__theme-button {
-        border-radius: 10px;
-        transition: all 0.4s;
-    }
+  .header__theme-button {
+    border-radius: 10px;
+    transition: all 0.4s;
+  }
 
-    .header__list-item a {
-        transition: all 0.4s;
-    }
+  .header__list-item a {
+    transition: all 0.4s;
+  }
 
-    .header__list-item:hover a {
-        color: var(--buttons-blue);
-    }
+  .header__list-item:hover a {
+    color: var(--buttons-blue);
+  }
 
-    .header__theme-button:hover {
-        background-color: var(--buttons-primary);
-        color: var(--primary-text-color);
-    }
+  .header__theme-button:hover {
+    background-color: var(--buttons-primary);
+    color: var(--primary-text-color);
+  }
 }
