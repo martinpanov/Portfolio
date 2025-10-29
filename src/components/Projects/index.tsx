@@ -30,7 +30,7 @@ const PROJECTS = [
     description:
       "A web application built with React, it provides a dynamic and responsive user interface, ensuring an interactive experience. Redux handles state management efficiently, while the OpenWeather API supplies real-time data. Users can access current weather conditions, daily forecasts, and today's weather details",
     technologies: ['React', 'Redux'],
-    link: 'https://weather.yoannabest.com',
+    link: 'https://martinp1.sg-host.com',
     codeLink: 'https://github.com/martinpanov/Weather-App',
   },
 ];
