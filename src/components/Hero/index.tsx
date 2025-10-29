@@ -32,7 +32,7 @@ export const Hero: FC = () => {
         <div className={styles['hero__person-img-wrapper']}>
           <img
             className={styles['hero__person-img']}
-            src="./me.png"
+            src="./me2.png"
             alt="hero-image"
             loading="eager"
             fetchPriority="high"
