@@ -32,7 +32,7 @@ export const About: FC = () => {
               src="./wave.png"
               alt="wave"
             />{' '}
-            Rougly 2 years ago, I started my journey of learning web development
+            Rougly 3 years ago, I started my journey of learning web development
             and more specifically specializing in JavaScript. I got into the IT
             industry back in 2019 as a Customer Service Representative in a
             hosting company called SiteGround.
