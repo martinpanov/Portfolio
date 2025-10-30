@@ -10,6 +10,10 @@ export const About: FC = () => {
     triggerOnce: true,
   });
 
+  const startDate = new Date('2022-01-01');
+  const currentDate = new Date();
+  const yearsOfExperience = currentDate.getFullYear() - startDate.getFullYear();
+
   return (
     <section
       id="about"
@@ -32,7 +36,7 @@ export const About: FC = () => {
               src="./wave.png"
               alt="wave"
             />{' '}
-            Rougly 3 years ago, I started my journey of learning web development
+            Rougly {yearsOfExperience} years ago, I started my journey of learning web development
             and more specifically specializing in JavaScript. I got into the IT
             industry back in 2019 as a Customer Service Representative in a
             hosting company called SiteGround.
